@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://accountingfirm-host.vercel.app/"),
+  metadataBase: new URL("https://accountingfirm-host.vercel.app"),
   title: {
     default: "Best Accounting Firm in Kerala | GST & Tax Experts",
     template: "%s | Your Firm Name",
