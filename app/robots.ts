@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://yourfirmname.in/sitemap.xml",
+    sitemap: "https://accountingfirm-host.vercel.app/sitemap.xml",
   };
 }
