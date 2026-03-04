@@ -23,16 +23,27 @@ export default function Home() {
     name: "FinAssure CA | Chartered Accountants",
     url: "https://finassureca.in",
     logo: "https://finassureca.in/logo.png",
-    description: "Premium Chartered Accountancy services in Kerala specializing in GST, Income Tax, and Corporate Audit",
+    description:
+      "Premium Chartered Accountancy services in Kerala specializing in GST, Income Tax, and Corporate Audit",
     areaServed: ["Kerala", "South India", "India"],
+  
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Infopark Phase II",
-      addressLocality: "Kakkanad, Kochi",
+      streetAddress: "Your Office Street Address",
+      addressLocality: "Adoor",
       addressRegion: "Kerala",
-      postalCode: "682030",
+      postalCode: "691523", // Update if different
       addressCountry: "India"
     },
+  
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 9.1534672,
+      longitude: 76.7306827
+    },
+  
+    hasMap: "https://www.google.com/maps/place/Adoor",
+  
     serviceType: [
       "GST Consulting & Compliance",
       "Corporate Income Tax Planning",
@@ -41,9 +52,11 @@ export default function Home() {
       "Financial Advisory",
       "Startup Consultancy"
     ],
+  
     priceRange: "₹₹",
     openingHours: "Mo-Fr 09:00-18:00",
     telephone: "+91-484-1234567",
+  
     sameAs: [
       "https://linkedin.com/company/finassure-ca",
       "https://facebook.com/finassureca"
@@ -137,20 +150,41 @@ export default function Home() {
         </section>
 
         {/* CLIENTS SECTION */}
-        <section className="py-16 bg-white border-y border-gray-100">
-          <div className="max-w-7xl mx-auto px-6">
-            <p className="text-center text-gray-500 uppercase tracking-wider text-sm font-semibold mb-8">
-              Trusted by Industry Leaders Across Kerala
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center opacity-60">
-              {['Building Corp', 'TechPark', 'Global Bank', 'HealthPlus', 'EcoMart'].map((company) => (
-                <div key={company} className="text-xl font-bold text-gray-400 hover:text-gray-600 transition-colors">
-                  {company}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <section className="py-20 bg-gradient-to-r from-blue-50 via-white to-indigo-50">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <p className="text-blue-600 font-semibold uppercase tracking-wider text-sm mb-3">
+        Trusted Partnerships
+      </p>
+      <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+        Serving Industry Leaders Across Kerala
+      </h3>
+    </div>
+
+    {/* Highlighted Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      {[
+        "Building Corp",
+        "TechPark",
+        "Global Bank",
+        "HealthPlus",
+        "EcoMart"
+      ].map((company) => (
+        <div
+          key={company}
+          className="group flex items-center justify-center h-24 bg-white rounded-2xl shadow-md border border-blue-100 hover:shadow-2xl hover:-translate-y-3 hover:border-blue-300 transition-all duration-300"
+        >
+          <span className="text-lg font-bold text-gray-700 group-hover:text-blue-700 transition-colors duration-300">
+            {company}
+          </span>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
 
         {/* SERVICES SECTION - Premium Cards */}
         <section className="py-24 bg-gradient-to-b from-white to-gray-50">
@@ -402,27 +436,28 @@ export default function Home() {
 
 
         {/* LOCATION SECTION */}
+{/* LOCATION SECTION */}
 <section className="py-24 bg-white">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center max-w-3xl mx-auto mb-16">
       <h2 className="text-4xl md:text-5xl font-bold mb-6">
-        Visit Our Office in Kochi
+        Visit Our Office
       </h2>
       <p className="text-xl text-gray-600">
-        Conveniently located at Infopark Phase II, Kakkanad
+        Adoor, Kerala
       </p>
     </div>
 
     <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
       <iframe
-        src="https://maps.app.goo.gl/asSkVRhkjCbLyGCi7"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15140.574009558102!2d76.73068269999999!3d9.1534672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06117fd96592e3%3A0xdb10856f42d5c637!2sAdoor%2C%20Kerala!5e1!3m2!1sen!2sin!4v1772596240013!5m2!1sen!2sin"
         width="100%"
         height="450"
         style={{ border: 0 }}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
+      />
     </div>
   </div>
 </section>
