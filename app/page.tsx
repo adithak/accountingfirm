@@ -400,6 +400,33 @@ export default function Home() {
           </div>
         </section>
 
+
+        {/* LOCATION SECTION */}
+<section className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        Visit Our Office in Kochi
+      </h2>
+      <p className="text-xl text-gray-600">
+        Conveniently located at Infopark Phase II, Kakkanad
+      </p>
+    </div>
+
+    <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+      <iframe
+        src="https://maps.app.goo.gl/asSkVRhkjCbLyGCi7"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
         {/* FOOTER */}
         <footer className="bg-gray-900 text-white pt-20 pb-10">
           <div className="max-w-7xl mx-auto px-6">
@@ -445,7 +472,7 @@ export default function Home() {
             </div>
 
             <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-              <p>&copy; 2024 FinAssure Chartered Accountants. All rights reserved.</p>
+              <p>&copy; 2026 FinAssure Chartered Accountants. All rights reserved.</p>
             </div>
           </div>
         </footer>
